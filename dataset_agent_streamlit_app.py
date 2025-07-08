@@ -290,11 +290,11 @@ def cleanup_temp_files():
 # Main function, calls all other functions above, creates the app layout
 def main():
     st.markdown('<h1 class="main-header">Data Visualization and Transformation Agent</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="sub-header">AI-powered data analysis and visualization tool. Enter your Together API key, select or upload a dataset, and describe your data analysis or visualization request. The agent will generate and execute code, displaying results and allowing you to download all outputs.</p>', unsafe_allow_html=True)
+    st.markdown(''<p class="sub-header">AI-powered data visualization and transformation tool. Enter your Together API key, select or upload a dataset, and describe your data analysis or visualization request. The agent will generate and execute code, displaying results and allowing you to download all outputs. Comprehensive documentation for the agent and application can be found on <a href="https://github.com/lpietan/streamlit-data-vis-agent">GitHub</a>. </p>', unsafe_allow_html=True)
 
     # dashboard app API key input 
     st.subheader("Together API Key")
-    api_key = st.text_input("Enter your Together API key", type="password", value=st.session_state.api_key, help="Your key is only stored in this session and never saved.")
+    api_key = st.text_input("Enter your Together API key (obtain a key [here](https://api.together.ai/signin))", type="password", value=st.session_state.api_key, help="Your key is only stored in this session and never saved.")
     st.session_state.api_key = api_key
     if not api_key:
         st.info("Please enter your Together API key to use the app.")

@@ -428,7 +428,7 @@ def main():
         # Run code securely
         output_files = []
         try:
-            st.warning(env)
+            st.warning(os.environ.get('STREAMLIT_SERVER_HEADLESS'))
             if env == 'cloud':
                 # Streamlit Community Cloud run with subprocess.run()
                 with tempfile.NamedTemporaryFile(delete=False, suffix='.py', dir=data_dir) as code_file:

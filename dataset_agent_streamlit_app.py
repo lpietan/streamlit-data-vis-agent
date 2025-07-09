@@ -324,7 +324,7 @@ def main():
     st.markdown("<br><br>", unsafe_allow_html=True)
 
     # assess uploaded files, if valid, add to the dropdown
-    uploaded_file = st.file_uploader("Upload a dataset file (CSV, TSV, TXT, XLSX, XLS, PARQUET, JSON, FEATHER)", type=['csv', 'tsv', 'txt', 'xlsx', 'xls', 'parquet', 'json', 'feather'])
+    uploaded_file = st.file_uploader("Upload a dataset file", type=['csv', 'tsv', 'txt', 'xlsx', 'xls', 'json', 'parquet', 'feather'])
     if uploaded_file is not None:
         try:
             ext = os.path.splitext(uploaded_file.name)[1].lower()

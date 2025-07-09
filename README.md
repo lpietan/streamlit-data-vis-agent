@@ -3,7 +3,7 @@
 # Description
 A data visualization and transformation agent hosted on an accessible streamlit dashboard app. 
 
-The AI agent can be ran locally or accessed [here]() with the agent hosted on the Streamlit Community Cloud. Users can input a description of a figure (e.g. a plot, chart, graph) or data transformation that they want to be produced from a dataset of their choosing or demo the agent by exploring the [Penuins dataset](https://github.com/allisonhorst/palmerpenguins) that is already imported. The agent generates and executes python code to construct the figure or the updated transformed dataset. 
+The AI agent can be ran locally or accessed [here](https://data-vis-agent.streamlit.app) with the agent hosted on the Streamlit Community Cloud. Users can input a description of a figure (e.g. a plot, chart, graph) or data transformation that they want to be produced from a dataset of their choosing or demo the agent by exploring the [Penuins dataset](https://github.com/allisonhorst/palmerpenguins) that is already imported. The agent generates and executes python code to construct the figure or the updated transformed dataset. 
 
 The goal of building this data visualization agent and hosting it on a streamlit application was steps to develop a proof of concept prototype for devlopment into a production ready tool for users with little to no programming abilities to use. This serves as a functional tool or as a building block for the development of other agents for mutiple use cases. 
 
@@ -11,7 +11,7 @@ The goal of building this data visualization agent and hosting it on a streamlit
 ## Streamlit Community Cloud 
 The dataset agent is hosted on the Streamlit Community Cloud at the following link. 
 
-LINK
+https://data-vis-agent.streamlit.app
 
 This allows anyone to have access to the agent to demo or to utilize for their data visualization or transformation needs. User dataset uploads are limited to 200MB. The uploaded datasets are not saved and will need to be reuploaded with each run instance of the app. 
 
